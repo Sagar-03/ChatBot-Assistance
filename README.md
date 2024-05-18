@@ -1,10 +1,6 @@
-Here's an attractive and informative README for the DELTA chatbot:
-
----
 
 # DELTA - Your Virtual Assistant
 
-![Delta Logo](https://chat-bot-assistant-beige.vercel.app/logo.png)
 
 ## Welcome to DELTA
 
