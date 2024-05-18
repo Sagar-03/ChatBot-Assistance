@@ -25,7 +25,7 @@ function wishMe() {
 }
 
 window.addEventListener('load', () => {
-    speak("Initializing NEXA...");
+    speak("Initializing DELTA...");
     wishMe();
 });
 
