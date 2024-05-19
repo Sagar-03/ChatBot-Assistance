@@ -1,4 +1,3 @@
-
 # DELTA - Your Virtual Assistant
 
 
