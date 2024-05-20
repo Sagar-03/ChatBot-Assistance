@@ -1,6 +1,9 @@
 const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 
+function takeCommand(message){
+    
+
 function speak(text) {
     const text_speak = new SpeechSynthesisUtterance(text);
 
@@ -59,10 +62,10 @@ function takeCommand(message){
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
     } else if (message.includes("open my git hub")) {
-        window.open("https://github.com/Sagar-03", "_blank");
+        window.open("https://github.com/", "_blank");
         speak("Opening Your github...");
     } else if (message.includes("open my linkedin")) {
-        window.open("https://www.linkedin.com/in/sagar-kumar-jha-237405240/", "_blank");
+        window.open("https://www.linkedin.com/", "_blank");
         speak("Opening Your linkdin...");
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
@@ -89,4 +92,8 @@ function takeCommand(message){
         const finalText = "I found some information for " + message + " on Google";
         speak(finalText);
     }
+}
+setTimeout(() => {
+    location.reload();
+}, 5000); // This will refresh the page after 5 seconds
 }
