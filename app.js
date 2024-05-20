@@ -1,9 +1,6 @@
 const btn = document.querySelector('.talk');
 const content = document.querySelector('.content');
 
-function takeCommand(message){
-    
-
 function speak(text) {
     const text_speak = new SpeechSynthesisUtterance(text);
 
@@ -19,11 +16,11 @@ function wishMe() {
     var hour = day.getHours();
 
     if (hour >= 0 && hour < 12) {
-        speak("Good Morning Sagar..");
+        speak("Good Morning ..");
     } else if (hour >= 12 && hour < 17) {
-        speak("Good Afternoon Sagar...");
+        speak("Good Afternoon ...");
     } else {
-        speak("Good Evening Sagar...");
+        speak("Good Evening ...");
     }
 }
 
@@ -61,11 +58,11 @@ function takeCommand(message){
     } else if (message.includes("open facebook")) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
-    } else if (message.includes("open my git hub")) {
-        window.open("https://github.com/", "_blank");
+    } else if (message.includes("open my git hub") || message.includes('open git hub')) {
+        window.open("https://github.com", "_blank");
         speak("Opening Your github...");
-    } else if (message.includes("open my linkedin")) {
-        window.open("https://www.linkedin.com/", "_blank");
+    } else if (message.includes("open my linkedin") || message.includes('open linkedin')) {
+        window.open("https://www.linkedin.com", "_blank");
         speak("Opening Your linkdin...");
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
@@ -93,7 +90,7 @@ function takeCommand(message){
         speak(finalText);
     }
 }
-setTimeout(() => {
-    location.reload();
-}, 5000); // This will refresh the page after 5 seconds
-}
+// setTimeout(() => {
+//     location.reload();
+// }, 5000); // This will refresh the page after 5 seconds
+
