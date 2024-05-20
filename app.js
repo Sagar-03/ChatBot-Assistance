@@ -58,7 +58,7 @@ function takeCommand(message){
     } else if (message.includes("open facebook")) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
-    } else if (message.includes("open my git hub") || message.includes('open git hub')) {
+    } else if (message.includes("open my git hub") || message.includes('open git hub') || message.includes('open get hub')) {
         window.open("https://github.com", "_blank");
         speak("Opening Your github...");
     } else if (message.includes("open my linkedin") || message.includes('open linkedin')) {
